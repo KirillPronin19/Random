@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    padding: 0;
+        /* пиксельный шрифт  */
+    /* font-family: "Press Start 2P", serif; */
+        /* угловатый  */
+    font-family: "Play", serif;
+
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.realRandomimg {
+    display: inline;
+    width: 3%;
+    margin-left: 20%;
+    margin-top: 0.5%;
+
+}
+
+/* контейнер шапки  */
+.headerContainer {
+    /* display: flex; */
+    margin-left: 63%;
+
+    
+}
+/* ul шапки  */
+.headerLinks {
+    display: flex;
+    list-style-type: none;
+
+}
+/* li шапки  */
+.headerInnerLinks {
+    justify-content: space-around;
+    padding-left: 5%;
+
+    font-size: 18px;
+    color: white;
+
+    margin-top: -10%;
+
+    
+}
+
+/* стили для первого блока с рандомом  */
+.realRandom {
+    background: rgb(0,0,48);
+    background: linear-gradient(36deg, rgba(0,0,48,1) 78%, rgba(0,16,107,1) 85%, rgba(0,34,128,1) 91%, rgba(10,113,203,1) 100%);
+    width: auto;
+    height: 1000px;
+    margin-top: -5%;
+}
+
+.realRandom h1 {
+    margin-left: 20%;
+    color: white;
+    font-size: 6vw;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+}
+
+.realRandom p {
+    color: white;
+    font-size: 1.5vw;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+    margin-left: 20%;
+    margin-top: -2%;
+}
+
+/* второй блок с самим рандомом  */
+
+.randomaizerBlock {
+    height: 1000px;
+    background: rgb(0,0,48);
+    background: linear-gradient(196deg, rgba(0,0,48,1) 69%, rgba(10,113,203,1) 100%);
+    margin-top: -5%;
+}
+
+.gradient-line {
+    width: 70vw; /* 70% от ширины экрана */
+    height: 2px; /* Высота линии */
+    background: linear-gradient(to right, transparent, #ff7f50, transparent); /* Градиент с прозрачными концами */
+    border-radius: 10px; /* Скругление концов */
+    margin-left: 15%;
+}
+
+.randomaizerBlock h2 {
+    color: white;
+    padding-top: 5%;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.randomaizerBlock p {
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+    font-size: 1.5vw;
+    margin-top: -7%;
+}
+
+.randomaizer {
+    max-width: 30%;
+    margin-left: 36%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 5%;
+    display: grid;
+    padding-top: 200px;
+}
+
+/* Минимальное значение  */
+.inputMinValue {
+    font-size: 1.7vw;
+    color: #07d3e6;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+}
+/* сам инпут  */
+#minValue {
+    border: 1px solid #079ce6;
+    border-radius: 7px;
+    height: 40px;
+    width: 98%;
+    font-size: 1.3vw;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+    text-align: center;
+
+}
+
+/* Максимальное значение  */
+.inputMaxValue {
+    font-size: 1.7vw;
+    color: #07d3e6;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+}
+/* сам инпут  */
+#maxValue {
+    border: 1px solid #079ce6;
+    border-radius: 7px;
+    height: 40px;
+    width: 98%;
+    font-size: 1.3vw;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+    text-align: center;
+
+}
+
+/* копка генерации рандома  */
+.buttonGenerateRandomNamber button {
+    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 30px;
+    border: 1px solid #079ce6;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.4vw;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s ease-in-out;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#generateButton:hover {
+    background: rgb(79,35,113);
+    background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
+    transform: scale(1.1);
+}
+
+.highlight {
+    padding-bottom: 40px;
+    padding-top: 30px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid #079ce6;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.7vw;
+    /* font-family: "Press Start 2P", serif; */
+    font-family: "Play", serif;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+/* Анимация кубика  */
+.scene {
+    width: 100px;
+    height: 100px;
+    perspective: 800px;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg) rotateY(30deg);
+    transition: transform 1s ease-out;
+}
+
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.front  { transform: translateZ(50px); }
+.back   { transform: rotateY(180deg) translateZ(50px); }
+.left   { transform: rotateY(-90deg) translateZ(50px); }
+.right  { transform: rotateY(90deg) translateZ(50px); }
+.top    { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+
+.kist {
+    margin-left: -65%;
+    margin-top: -60%;
+}
+
+.kistSecond {
+    margin-left: 120%;
+    margin-top: -120%;
+}
+
+.randomCubeAll {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Артикл  */
+
+.stateBlock {
+    /* margin-top: -20%; */
+    width: auto;
+    height: 600px;
+    background: rgb(0,0,48);
+    background: linear-gradient(333deg, rgba(0,0,48,1) 46%, rgba(10,113,203,1) 100%);
+}
+
+.artc {
+    padding-top: 7%;
+}
+
+.article {
+    max-width: 800px;
+    /* margin: auto; */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* margin-top: 20%; */
+    margin-left: 30%;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.134);
+
+    color: white;
+}
+
+.state h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #afafaf;
+}
+
+.outro {
+    color: #444;
+    font-size: 18px;
+}
+
+.listOfFeatures {
+    list-style-type: none; /* Убираем стандартные точки */
+    padding-left: 0;
+}
+
+.features {
+    padding-top: 1%;
+}
+
+ul li::before {
+    content: "🔹"; /* Добавляем символ перед каждым пунктом */
+    margin-right: 8px; /* Отступ между иконкой и текстом */
+}
+
+/* footer  */
+footer {
+    height: 60px;
+    width: auto;
+
+    background: rgb(2,63,117);
+    background: linear-gradient(162deg, rgba(2,63,117,1) 0%, rgba(0,0,48,1) 21%);
+
+    padding-left: 30%;
+    padding-top: 2%;
+
+    color: white;
+}
+
+.linkToGit a {
+    text-decoration: none;
+    color: white;
+}
