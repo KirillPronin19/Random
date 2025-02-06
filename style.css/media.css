@@ -59,6 +59,7 @@
 
     /* сам инпут min */
     #minValue {
+        border: 1px solid #a97e00;
         height: 20px;
         font-size: 4vw;
     }
@@ -69,6 +70,7 @@
     }
     /* сам инпут max */
     #maxValue {
+        border: 1px solid #a97e00;
         height: 20px;
         font-size: 4vw;
     }
@@ -81,6 +83,7 @@
         padding-left: 10px;
         height: 20px;
         font-size: 3.5vw;
+        border: 1px solid #a97e00;
     }
     #generateButton:hover,
     #generateButton:active {
@@ -97,6 +100,7 @@
         padding-left: 10px;
         height: 30px;
         font-size: 4vw;
+        border: 1px solid #a97e00;
     }
 
     /* 2 кубика около полей ввода  */
@@ -125,10 +129,11 @@
     }
 
     .article {
-        max-width: 800px;
+        max-width: 70%;
         padding: 20px;
         border-radius: 10px;
-        margin-left: 30%;
+        margin-left: 10%;
+        margin-top: 5%;
         backdrop-filter: blur(10px);
         background-color: rgb(7, 0, 75);
         color: white;
@@ -154,9 +159,9 @@
     
     /* Анимация свечения */
     @keyframes glow {
-        0% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.6); }
-        50% { box-shadow: 0 0 30px rgba(253, 164, 241, 0.6); }
-        100% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.6); }
+        0% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.3); }
+        50% { box-shadow: 0 0 30px rgba(253, 164, 241, 0.3); }
+        100% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.3); }
     }
     
     .article {
@@ -164,7 +169,7 @@
     }
     
     .article h1 {
-        color: #333;
+        color: #ffffff;
         font-size: 6vw;
         margin-bottom: 10px;
     }
@@ -174,7 +179,7 @@
         padding-left: 15px;
         margin: 15px 0;
         font-style: italic;
-        color: #afafaf;
+        color: #dddddd;
     }
     
     .outro {
