@@ -994,39 +994,63 @@
     }
 }
 
+/* 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 */
+/* 🔹🔹🔹🔹🔹🔹ДОДЕЛАТЬ🔹🔹🔹🔹🔹 */
+/* 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 */
+
+
   /* Ноутбуки и десктопы (от 992px и выше) */
 @media (min-width: 992px) { 
     /* Стили для ноутбуков и обычных мониторов */
 
     header {
-        display: none;
+        display: block;
+    }
+
+    .realRandomimg {
+        display: inline;
+        width: 5%;
+        margin-left: 10%;
+        margin-top: 0.5%;
     }
 
     /* 🔹🔹🔹ПЕРВЫЙ БЛОК🔹🔹🔹  */
     .realRandom {
-        height: 550px;
+        height: 950px;
+        margin-top: -20%;
     }   
+
+    /* стили для трех кубов на главном экране  */
+    .randomCubeAll {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .realRandom h1 {
         margin-left: 10%;
-        padding-top: 10%;
+        padding-top: 30%;
         font-size: 12vw;
     }
     
     .realRandom p {
-        font-size: 5vw;
-        margin-left: 12%;
-        margin-top: -2%;
+        font-size: 3vw;
+        margin-left: 11%;
+        margin-top: -8%;
     }
 
     /* 🔹🔹🔹второй блок с самим рандомайзером🔹🔹🔹  */
     .randomaizerBlock {
-        height: 600px;
-        margin-top: -5%;
+        height: 800px;
+        padding-top: 10%;
     }
 
     .randomaizerBlock h2 {
-        display: none;
+        display: block;
+        margin-top: -5%;
+        margin-bottom: 10%;
     }
 
     .randomaizerBlock p {
@@ -1039,42 +1063,44 @@
     }
     /* сам рандомайзер  */
     .randomaizer {
-        margin-left: 18%;
-        margin-top: -50%;
+        margin-left: 26%;
+        margin-top: -40%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        grid-column-gap: 30%;
+        grid-row-gap: 10%;
     }
 
     /* Минимальное значение  */
     .inputMinValue {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     /* сам инпут min */
     #minValue {
         border: 2px solid #a97e00;
         height: 40px;
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     /* Максимальное значение  */
     .inputMaxValue {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     /* сам инпут max */
     #maxValue {
         border: 2px solid #a97e00;
         height: 40px;
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     /* копка генерации рандома  */
     .buttonGenerateRandomNamber button {
-        padding-bottom: 70px;
+        padding-bottom: 40px;
         padding-top: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 50px;
+        padding-left: 50px;
         height: 20px;
-        font-size: 3.5vw;
+        font-size: 2.5vw;
         border: 2px solid #a97e00;
     }
     #generateButton:hover,
@@ -1086,22 +1112,22 @@
 
     /* вывод результата скрипта  */
     .highlight {
-        padding-bottom: 30px;
-        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-top: 5px;
         padding-right: 10px;
         padding-left: 10px;
         height: 30px;
-        font-size: 4vw;
+        font-size: 3vw;
         border: 2px solid #a97e00;
     }
 
     /* 2 кубика около полей ввода  */
     .kist {
-        display: none;
+        display: grid;
     }
     
     .kistSecond {
-        display: none;
+        display: grid;
     }
 
     .randomCubeAll {
@@ -1172,6 +1198,7 @@
         margin: 15px 0;
         font-style: italic;
         color: #dddddd;
+        font-size: 2vw;
     }
     
     .outro {
@@ -1182,6 +1209,7 @@
     .listOfFeatures {
         list-style-type: none; /* Убираем стандартные точки */
         padding-left: 0;
+        font-size: 2vw;
     }
     
     .features {
@@ -1197,9 +1225,751 @@
   /* Широкие экраны (от 1200px и выше) */
 @media (min-width: 1200px) { 
     /* Стили для больших экранов и широких мониторов */
+    
+    .realRandomimg {
+        display: inline;
+        width: 5%;
+        margin-left: 20%;
+        margin-top: 0.5%;
+        /* padding-top: 5%; */
+    }
+
+    header {
+        height: 150px;
+    }
+    
+    /* стили для первого блока с рандомом  */
+    .realRandom {
+        background: rgb(0,0,48);
+        background: linear-gradient(36deg, rgba(0,0,48,1) 78%, rgba(0,16,107,1) 85%, rgba(0,34,128,1) 91%, rgba(10,113,203,1) 100%);
+        width: auto;
+        height: 1200px;
+        margin-top: -15%;
+    }
+    
+    .realRandom h1 {
+        margin-left: 20%;
+        color: white;
+        font-size: 9vw;
+        font-family: "Play", serif;
+        margin-top: -30%;
+    }
+    
+    .realRandom p {
+        color: white;
+        font-size: 2.5vw;
+        /* font-family: "Press Start 2P", serif; */
+        font-family: "Play", serif;
+        margin-left: 20%;
+        margin-top: -2%;
+    }
+    
+        /* 🔹🔹🔹второй блок с самим рандомайзером🔹🔹🔹  */
+        .randomaizerBlock {
+            height: 900px;
+            padding-top: 10%;
+        }
+    
+        .randomaizerBlock h2 {
+            display: block;
+            margin-top: -5%;
+            margin-bottom: 10%;
+        }
+    
+        .randomaizerBlock p {
+            padding-top: 0%;
+            font-size: 3vw;
+        }
+    
+        .gradient-line {
+            margin-bottom: 30%;
+        }
+        /* сам рандомайзер  */
+        .randomaizer {
+            margin-left: 28%;
+            margin-top: -40%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 20%;
+            grid-row-gap: 10%;
+        }
+    
+        /* Минимальное значение  */
+        .inputMinValue {
+            font-size: 3vw;
+        }
+        /* сам инпут min */
+        #minValue {
+            border: 2px solid #a97e00;
+            height: 40px;
+            font-size: 3vw;
+        }
+    
+        /* Максимальное значение  */
+        .inputMaxValue {
+            font-size: 3vw;
+        }
+        /* сам инпут max */
+        #maxValue {
+            border: 2px solid #a97e00;
+            height: 40px;
+            font-size: 3vw;
+        }
+    
+        /* копка генерации рандома  */
+        .buttonGenerateRandomNamber button {
+            padding-bottom: 40px;
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-left: 50px;
+            height: 20px;
+            font-size: 2.5vw;
+            border: 2px solid #a97e00;
+        }
+        #generateButton:hover,
+        #generateButton:active {
+            background: rgb(79,35,113);
+            background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
+            transform: scale(1.1);
+        }
+    
+        /* вывод результата скрипта  */
+        .highlight {
+            padding-bottom: 15px;
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            height: 30px;
+            font-size: 3vw;
+            border: 2px solid #a97e00;
+        }
+    
+        /* 2 кубика около полей ввода  */
+        .kist {
+            display: grid;
+        }
+        
+        .kistSecond {
+            display: grid;
+        }
+    
+        .randomCubeAll {
+            display: none;
+        }
+    
+        /* 🔹🔹🔹АРТИКЛ🔹🔹🔹  */
+    
+        .stateBlock {
+            margin-top: -2%;
+            height: 800px;
+            background: rgb(0,0,48);
+        }
+    
+        .artc {
+            padding-top: 7%;
+        }
+    
+        .article {
+            max-width: 70%;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 13%;
+            margin-top: 5%;
+            backdrop-filter: blur(10px);
+            background-color: rgb(7, 0, 75);
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Псевдоэлемент для градиентной тени */
+        .article::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(3, 169, 244, 0.6), rgba(253, 164, 241, 0.6));
+            border-radius: inherit;
+            z-index: -1;
+            filter: blur(20px);
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+        
+        /* Анимация свечения */
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(253, 164, 241, 0.3); }
+            100% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.3); }
+        }
+        
+        .article {
+            animation: glow 3s infinite alternate;
+        }
+        
+        .article h1 {
+            color: #ffffff;
+            font-size: 6vw;
+            margin-bottom: 10px;
+        }
+        
+        blockquote {
+            border-left: 4px solid #007bff;
+            padding-left: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #dddddd;
+            font-size: 2vw;
+        }
+        
+        .outro {
+            color: #444;
+            font-size: 18px;
+        }
+        
+        .listOfFeatures {
+            list-style-type: none; /* Убираем стандартные точки */
+            padding-left: 0;
+            font-size: 2vw;
+        }
+        
+        .features {
+            padding-top: 1%;
+        }
+        
+        ul li::before {
+            content: "🔹"; /* Добавляем символ перед каждым пунктом */
+            margin-right: 8px; /* Отступ между иконкой и текстом */
+        }
+    
+    .randomCubeAll {
+        padding-top: 20%;
+        padding-bottom: 10%;
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    /* footer  */
+    footer {
+        height: 60px;
+        width: auto;
+    
+        background: rgb(2,63,117);
+        /* background: linear-gradient(162deg, rgba(2,63,117,1) 0%, rgba(0,0,48,1) 21%); */
+    
+        padding-left: 20%;
+        padding-top: 2%;
+    
+        color: white;
+    }
+    
+    .linkToGit a {
+        text-decoration: none;
+        color: white;
+    }
+    
 }
 
   /* Очень большие экраны (от 1440px и выше) */
 @media (min-width: 1440px) { 
     /* Дополнительные стили для широкоформатных экранов */
+
+    .realRandomimg {
+        display: inline;
+        width: 5%;
+        margin-left: 20%;
+        margin-top: 0.5%;
+        /* padding-top: 5%; */
+    }
+
+    header {
+        height: 150px;
+    }
+    
+    /* стили для первого блока с рандомом  */
+    .realRandom {
+        background: rgb(0,0,48);
+        background: linear-gradient(36deg, rgba(0,0,48,1) 78%, rgba(0,16,107,1) 85%, rgba(0,34,128,1) 91%, rgba(10,113,203,1) 100%);
+        width: auto;
+        height: 1200px;
+        margin-top: -15%;
+    }
+    
+    .realRandom h1 {
+        margin-left: 20%;
+        color: white;
+        font-size: 9vw;
+        font-family: "Play", serif;
+        margin-top: -30%;
+    }
+    
+    .realRandom p {
+        color: white;
+        font-size: 2.5vw;
+        /* font-family: "Press Start 2P", serif; */
+        font-family: "Play", serif;
+        margin-left: 20%;
+        margin-top: -2%;
+    }
+    
+        /* 🔹🔹🔹второй блок с самим рандомайзером🔹🔹🔹  */
+        .randomaizerBlock {
+            height: 1000px;
+            padding-top: 10%;
+        }
+    
+        .randomaizerBlock h2 {
+            display: block;
+            margin-top: -5%;
+            margin-bottom: 10%;
+        }
+    
+        .randomaizerBlock p {
+            padding-top: 0%;
+            font-size: 3vw;
+        }
+    
+        .gradient-line {
+            margin-bottom: 30%;
+        }
+        /* сам рандомайзер  */
+        .randomaizer {
+            margin-left: 28%;
+            margin-top: -40%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 20%;
+            grid-row-gap: 10%;
+        }
+    
+        /* Минимальное значение  */
+        .inputMinValue {
+            font-size: 3vw;
+        }
+        /* сам инпут min */
+        #minValue {
+            border: 2px solid #a97e00;
+            height: 40px;
+            font-size: 1.9vw;
+        }
+    
+        /* Максимальное значение  */
+        .inputMaxValue {
+            font-size: 3vw;
+        }
+        /* сам инпут max */
+        #maxValue {
+            border: 2px solid #a97e00;
+            height: 40px;
+            font-size: 1.9vw;
+        }
+    
+        /* копка генерации рандома  */
+        .buttonGenerateRandomNamber button {
+            padding-bottom: 45px;
+            padding-top: 5px;
+            padding-right: 80px;
+            padding-left: 80px;
+            height: 20px;
+            font-size: 1.9vw;
+            border: 2px solid #a97e00;
+        }
+        #generateButton:hover,
+        #generateButton:active {
+            background: rgb(79,35,113);
+            background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
+            transform: scale(1.1);
+        }
+    
+        /* вывод результата скрипта  */
+        .highlight {
+            padding-bottom: 15px;
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            height: 30px;
+            font-size: 2.3vw;
+            border: 2px solid #a97e00;
+        }
+    
+        /* 2 кубика около полей ввода  */
+        .kist {
+            display: grid;
+        }
+        
+        .kistSecond {
+            display: grid;
+        }
+    
+        .randomCubeAll {
+            display: none;
+        }
+    
+        /* 🔹🔹🔹АРТИКЛ🔹🔹🔹  */
+    
+        .stateBlock {
+            /* margin-top: -2%; */
+            height: 800px;
+            background: rgb(0,0,48);
+        }
+    
+        .artc {
+            padding-top: 7%;
+        }
+    
+        .article {
+            max-width: 60%;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 20%;
+            margin-top: 5%;
+            backdrop-filter: blur(10px);
+            background-color: rgb(7, 0, 75);
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Псевдоэлемент для градиентной тени */
+        .article::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(3, 169, 244, 0.6), rgba(253, 164, 241, 0.6));
+            border-radius: inherit;
+            z-index: -1;
+            filter: blur(20px);
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+        
+        /* Анимация свечения */
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(253, 164, 241, 0.3); }
+            100% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.3); }
+        }
+        
+        .article {
+            animation: glow 3s infinite alternate;
+        }
+        
+        .article h1 {
+            color: #ffffff;
+            font-size: 5vw;
+            margin-bottom: 10px;
+        }
+        
+        blockquote {
+            border-left: 4px solid #007bff;
+            padding-left: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #dddddd;
+            font-size: 1.5vw;
+        }
+        
+        .outro {
+            color: #444;
+            font-size: 18px;
+        }
+        
+        .listOfFeatures {
+            list-style-type: none; /* Убираем стандартные точки */
+            padding-left: 0;
+            font-size: 1.5vw;
+        }
+        
+        .features {
+            padding-top: 1%;
+        }
+        
+        ul li::before {
+            content: "🔹"; /* Добавляем символ перед каждым пунктом */
+            margin-right: 8px; /* Отступ между иконкой и текстом */
+        }
+    
+    .randomCubeAll {
+        padding-top: 20%;
+        padding-bottom: 10%;
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    /* footer  */
+    footer {
+        height: 60px;
+        width: auto;
+    
+        background: rgb(2,63,117);
+        /* background: linear-gradient(162deg, rgba(2,63,117,1) 0%, rgba(0,0,48,1) 21%); */
+    
+        padding-left: 20%;
+        padding-top: 2%;
+    
+        color: white;
+    }
+    
+    .linkToGit a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media (min-width: 1920px) {
+    .realRandomimg {
+        display: inline;
+        width: 5%;
+        margin-left: 20%;
+        margin-top: 0.5%;
+        /* padding-top: 5%; */
+    }
+
+    header {
+        height: 150px;
+    }
+    
+    /* стили для первого блока с рандомом  */
+    .realRandom {
+        background: rgb(0,0,48);
+        background: linear-gradient(36deg, rgba(0,0,48,1) 78%, rgba(0,16,107,1) 85%, rgba(0,34,128,1) 91%, rgba(10,113,203,1) 100%);
+        width: auto;
+        height: 1500px;
+        margin-top: -15%;
+    }
+    
+    .realRandom h1 {
+        margin-left: 20%;
+        color: white;
+        font-size: 9vw;
+        font-family: "Play", serif;
+        margin-top: -30%;
+    }
+    
+    .realRandom p {
+        color: white;
+        font-size: 2.1vw;
+        /* font-family: "Press Start 2P", serif; */
+        font-family: "Play", serif;
+        margin-left: 20%;
+        margin-top: -5%;
+    }
+    
+        /* 🔹🔹🔹второй блок с самим рандомайзером🔹🔹🔹  */
+        .randomaizerBlock {
+            height: 1000px;
+            padding-top: 10%;
+        }
+    
+        .randomaizerBlock h2 {
+            display: block;
+            margin-top: -5%;
+            margin-bottom: 10%;
+        }
+    
+        .randomaizerBlock p {
+            padding-top: 0%;
+            font-size: 2.5vw;
+        }
+    
+        .gradient-line {
+            margin-bottom: 30%;
+        }
+        /* сам рандомайзер  */
+        .randomaizer {
+            margin-left: 32%;
+            margin-top: -40%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 20%;
+            grid-row-gap: 10%;
+        }
+    
+        /* Минимальное значение  */
+        .inputMinValue {
+            font-size: 2vw;
+        }
+        /* сам инпут min */
+        #minValue {
+            border: 2px solid #a97e00;
+            height: 40px;
+            font-size: 1.9vw;
+        }
+    
+        /* Максимальное значение  */
+        .inputMaxValue {
+            font-size: 2vw;
+        }
+        /* сам инпут max */
+        #maxValue {
+            border: 2px solid #a97e00;
+            height: 40px;
+            font-size: 1.9vw;
+        }
+    
+        /* копка генерации рандома  */
+        .buttonGenerateRandomNamber button {
+            padding-bottom: 45px;
+            padding-top: 5px;
+            padding-right: 80px;
+            padding-left: 80px;
+            height: 20px;
+            font-size: 1.9vw;
+            border: 2px solid #a97e00;
+        }
+        #generateButton:hover,
+        #generateButton:active {
+            background: rgb(79,35,113);
+            background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
+            transform: scale(1.1);
+        }
+    
+        /* вывод результата скрипта  */
+        .highlight {
+            padding-bottom: 15px;
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            height: 30px;
+            font-size: 2.3vw;
+            border: 2px solid #a97e00;
+        }
+    
+        /* 2 кубика около полей ввода  */
+        .kist {
+            display: grid;
+            margin-left: -85%;
+            margin-top: -60%
+        }
+        
+        .kistSecond {
+            display: grid;
+            margin-left: 140%;
+            margin-top: -120%;
+        }
+    
+        .randomCubeAll {
+            display: none;
+        }
+    
+        /* 🔹🔹🔹АРТИКЛ🔹🔹🔹  */
+    
+        .stateBlock {
+            /* margin-top: -2%; */
+            height: 1100px;
+            background: rgb(0,0,48);
+        }
+    
+        .artc {
+            padding-top: 7%;
+        }
+    
+        .article {
+            max-width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 25%;
+            margin-top: %;
+            backdrop-filter: blur(10px);
+            background-color: rgb(7, 0, 75);
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Псевдоэлемент для градиентной тени */
+        .article::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(3, 169, 244, 0.6), rgba(253, 164, 241, 0.6));
+            border-radius: inherit;
+            z-index: -1;
+            filter: blur(20px);
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+        
+        /* Анимация свечения */
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(253, 164, 241, 0.3); }
+            100% { box-shadow: 0 0 20px rgba(3, 169, 244, 0.3); }
+        }
+        
+        .article {
+            animation: glow 3s infinite alternate;
+        }
+        
+        .article h1 {
+            color: #ffffff;
+            font-size: 3vw;
+            margin-bottom: 10px;
+        }
+        
+        blockquote {
+            border-left: 4px solid #007bff;
+            padding-left: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #dddddd;
+            font-size: 1.3vw;
+        }
+        
+        .outro {
+            color: #444;
+            font-size: 18px;
+        }
+        
+        .listOfFeatures {
+            list-style-type: none; /* Убираем стандартные точки */
+            padding-left: 0;
+            font-size: 1.3vw;
+        }
+        
+        .features {
+            padding-top: 1%;
+        }
+        
+        ul li::before {
+            content: "🔹"; /* Добавляем символ перед каждым пунктом */
+            margin-right: 8px; /* Отступ между иконкой и текстом */
+        }
+    
+    .randomCubeAll {
+        padding-top: 20%;
+        padding-bottom: 10%;
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    /* footer  */
+    footer {
+        height: 60px;
+        width: auto;
+    
+        background: rgb(2,63,117);
+        /* background: linear-gradient(162deg, rgba(2,63,117,1) 0%, rgba(0,0,48,1) 21%); */
+    
+        padding-left: 30%;
+        padding-top: 2%;
+    
+        color: white;
+    }
+    
+    .linkToGit a {
+        text-decoration: none;
+        color: white;
+    }
 }
