@@ -86,12 +86,6 @@
         font-size: 3.5vw;
         border: 1px solid #a97e00;
     }
-    #generateButton:hover,
-    #generateButton:active {
-        background: rgb(79,35,113);
-        background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-        transform: scale(1.1);
-    }
 
     /* вывод результата скрипта  */
     .highlight {
@@ -122,7 +116,7 @@
     .stateBlock {
         margin-top: -2%;
         height: 800px;
-        background: rgb(0,0,48);
+        /* background: rgb(0,0,48); */
     }
 
     .artc {
@@ -291,11 +285,6 @@
         font-size: 3.5vw;
         border: 1px solid #a97e00;
     }
-    #generateButton:hover,
-    #generateButton:active {
-        background: rgb(79,35,113);
-        background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-        transform: scale(1.1);
     }
 
     /* вывод результата скрипта  */
@@ -327,7 +316,7 @@
     .stateBlock {
         margin-top: -2%;
         height: 800px;
-        background: rgb(0,0,48);
+        /* background: rgb(0,0,48); */
     }
 
     .artc {
@@ -480,12 +469,6 @@
         font-size: 3.5vw;
         border: 1px solid #a97e00;
     }
-    #generateButton:hover,
-    #generateButton:active {
-        background: rgb(79,35,113);
-        background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-        transform: scale(1.1);
-    }
 
     /* вывод результата скрипта  */
     .highlight {
@@ -516,7 +499,7 @@
     .stateBlock {
         margin-top: -2%;
         height: 800px;
-        background: rgb(0,0,48);
+        /* background: rgb(0,0,48); */
     }
 
     .artc {
@@ -680,12 +663,6 @@
         font-size: 3.5vw;
         border: 1px solid #a97e00;
     }
-    #generateButton:hover,
-    #generateButton:active {
-        background: rgb(79,35,113);
-        background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-        transform: scale(1.1);
-    }
 
     /* вывод результата скрипта  */
     .highlight {
@@ -716,7 +693,7 @@
     .stateBlock {
         margin-top: -2%;
         height: 800px;
-        background: rgb(0,0,48);
+        /* background: rgb(0,0,48); */
     }
 
     .artc {
@@ -881,12 +858,6 @@
         font-size: 3.5vw;
         border: 2px solid #a97e00;
     }
-    #generateButton:hover,
-    #generateButton:active {
-        background: rgb(79,35,113);
-        background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-        transform: scale(1.1);
-    }
 
     /* вывод результата скрипта  */
     .highlight {
@@ -917,7 +888,7 @@
     .stateBlock {
         margin-top: -2%;
         height: 800px;
-        background: rgb(0,0,48);
+        /* background: rgb(0,0,48); */
     }
 
     .artc {
@@ -1104,12 +1075,6 @@
         font-size: 2.5vw;
         border: 2px solid #a97e00;
     }
-    #generateButton:hover,
-    #generateButton:active {
-        background: rgb(79,35,113);
-        background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-        transform: scale(1.1);
-    }
 
     /* вывод результата скрипта  */
     .highlight {
@@ -1140,7 +1105,7 @@
     .stateBlock {
         margin-top: -2%;
         height: 800px;
-        background: rgb(0,0,48);
+        /* background: rgb(0,0,48); */
     }
 
     .artc {
@@ -1241,8 +1206,6 @@
     
     /* стили для первого блока с рандомом  */
     .realRandom {
-        background: rgb(0,0,48);
-        background: linear-gradient(36deg, rgba(0,0,48,1) 78%, rgba(0,16,107,1) 85%, rgba(0,34,128,1) 91%, rgba(10,113,203,1) 100%);
         width: auto;
         height: 1200px;
         margin-top: -15%;
@@ -1327,13 +1290,7 @@
             font-size: 2.5vw;
             border: 2px solid #a97e00;
         }
-        #generateButton:hover,
-        #generateButton:active {
-            background: rgb(79,35,113);
-            background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-            transform: scale(1.1);
-        }
-    
+
         /* вывод результата скрипта  */
         .highlight {
             padding-bottom: 15px;
@@ -1363,7 +1320,7 @@
         .stateBlock {
             margin-top: -2%;
             height: 800px;
-            background: rgb(0,0,48);
+            /* background: rgb(0,0,48); */
         }
     
         .artc {
@@ -1492,8 +1449,6 @@
     
     /* стили для первого блока с рандомом  */
     .realRandom {
-        background: rgb(0,0,48);
-        background: linear-gradient(36deg, rgba(0,0,48,1) 78%, rgba(0,16,107,1) 85%, rgba(0,34,128,1) 91%, rgba(10,113,203,1) 100%);
         width: auto;
         height: 1200px;
         margin-top: -15%;
@@ -1578,12 +1533,6 @@
             font-size: 1.9vw;
             border: 2px solid #a97e00;
         }
-        #generateButton:hover,
-        #generateButton:active {
-            background: rgb(79,35,113);
-            background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-            transform: scale(1.1);
-        }
     
         /* вывод результата скрипта  */
         .highlight {
@@ -1614,7 +1563,7 @@
         .stateBlock {
             /* margin-top: -2%; */
             height: 1200px;
-            background: rgb(0,0,48);
+            /* background: rgb(0,0,48); */
         }
     
         .artc {
@@ -1739,8 +1688,6 @@
     
     /* стили для первого блока с рандомом  */
     .realRandom {
-        background: rgb(0,0,48);
-        background: linear-gradient(36deg, rgba(0,0,48,1) 78%, rgba(0,16,107,1) 85%, rgba(0,34,128,1) 91%, rgba(10,113,203,1) 100%);
         width: auto;
         height: 1500px;
         margin-top: -15%;
@@ -1825,12 +1772,6 @@
             font-size: 1.9vw;
             border: 2px solid #a97e00;
         }
-        #generateButton:hover,
-        #generateButton:active {
-            background: rgb(79,35,113);
-            background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
-            transform: scale(1.1);
-        }
     
         /* вывод результата скрипта  */
         .highlight {
@@ -1865,7 +1806,7 @@
         .stateBlock {
             /* margin-top: -2%; */
             height: 1100px;
-            background: rgb(0,0,48);
+            /* background: rgb(0,0,48); */
         }
     
         .artc {

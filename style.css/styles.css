@@ -17,10 +17,10 @@ body {
     margin-top: 0.5%;
 }
 
-/* стили для первого блока с рандомом  */
+/* 💎стили для первого блока с рандомом💎  */
 .realRandom {
-    background: rgb(0,0,48);
-    background: linear-gradient(36deg, rgba(0,0,48,1) 78%, rgba(0,16,107,1) 85%, rgba(0,34,128,1) 91%, rgba(10,113,203,1) 100%);
+    background: rgb(0,0,24);
+    background: linear-gradient(50deg, rgba(0,0,24,1) 63%, rgba(0,1,19,1) 76%, rgba(0,16,107,1) 100%);
     width: auto;
     height: 1000px;
     margin-top: -5%;
@@ -43,11 +43,11 @@ body {
     margin-top: -2%;
 }
 
-/* второй блок с самим рандомом  */
+/* 💎второй блок с самим рандомом💎  */
 
 .randomaizerBlock {
     height: 1000px;
-    background: rgb(0,0,48);
+    background: rgb(0,0,24);
     /* background: linear-gradient(196deg, rgba(0,0,48,1) 69%, rgba(10,113,203,1) 100%); */
     margin-top: -5%;
 }
@@ -152,13 +152,11 @@ body {
     /* font-family: "Press Start 2P", serif; */
     font-family: "Play", serif;
     backdrop-filter: blur(10px);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     background-color: rgba(255, 255, 255, 0);
 }
 
 #generateButton:hover {
-    background: rgb(79,35,113);
-    background: linear-gradient(21deg, rgba(79,35,113,1) 46%, rgba(3,38,54,1) 100%);
     transform: scale(1.1);
 }
 
@@ -243,12 +241,13 @@ body {
     /* margin-top: -20%; */
     width: auto;
     height: 600px;
-    background: rgb(0,0,48);
+    background: rgb(0,0,24);
     /* background: linear-gradient(333deg, rgba(0,0,48,1) 46%, rgba(10,113,203,1) 100%); */
 }
 
 .artc {
     padding-top: 7%;
+    margin-top: 2%;
 }
 
 .article {
@@ -322,6 +321,54 @@ blockquote {
 ul li::before {
     content: "🔹"; /* Добавляем символ перед каждым пунктом */
     margin-right: 8px; /* Отступ между иконкой и текстом */
+}
+
+
+/* 💎рандомайзер паролей💎  */
+.randomPassword {
+    margin-top: -3.4%;
+    height: 900px;
+    width: auto;
+    -webkit-box-shadow: 0px 1px 25px 12px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 1px 25px 12px rgba(0,0,0,0.44);
+    box-shadow: 0px 1px 25px 12px rgba(0,0,0,0.44);
+}
+
+.randomPassword h2 {
+    color: white;
+    padding-top: 5%;
+    font-family: "Play", serif;
+    font-size: 4vw;
+    text-align: center;
+}
+
+#generatePasswordBtn {
+    margin-left: 40%;
+    margin-top: 5%;
+
+    width: 20%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    height: 30px;
+    border: 1px solid #079ce6;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.4vw;
+    font-family: "Play", serif;
+    backdrop-filter: blur(10px);
+    transition: transform 0.1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0);
+}
+#generatePasswordBtn:hover {
+    transform: scale(1.1);  
+}
+
+#passwordBlock {
+    margin-top: 5%;
+    text-align: center;
+
+    color: white;
+    font-size: 5vw;
 }
 
 /* footer  */
