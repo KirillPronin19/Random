@@ -101,7 +101,7 @@ body {
     border: 1px solid #079ce6;
     border-radius: 7px;
     height: 40px;
-    width: 98%;
+    width: 100%;
     font-size: 1.3vw;
     justify-content: center;
     backdrop-filter: blur(10px);
@@ -139,6 +139,7 @@ body {
 
 /* копка генерации рандома  */
 .buttonGenerateRandomNamber button {
+    width: 100%;
     padding-bottom: 80px;
     padding-top: 20px;
     padding-right: 20px;
@@ -162,10 +163,11 @@ body {
 }
 
 .highlight {
+    width: 92%;
     padding-bottom: 40px;
     padding-top: 30px;
     text-align: center;
-    height: 30px;
+    height: 20px;
     border: 1px solid #079ce6;
     border-radius: 7px;
     color: white;
@@ -251,7 +253,8 @@ body {
 
 .article {
     max-width: 800px;
-    padding: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
     border-radius: 10px;
     margin-left: 30%;
     backdrop-filter: blur(10px);
